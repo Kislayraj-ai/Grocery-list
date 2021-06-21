@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+
+    <!--fontawsome here-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        rel="stylesheet">
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="main-container">
+        <!--form for input items-->
+        <form class="form">
+            <p class="alert"></p>
+            <h3>Grocery List</h3>
+            <div class="div-form">
+                <input type="text" class="grocery" placeholder="e.g. eggs" />
+
+                <button class="submit-button">add</button>
+            </div>
+        </form>
+
+        <!----items container---->
+
+        <div class="grocery-container">
+            <article class="grocery-list">
+                <!------
+                    only used to create structure 
+                    to be added dynamically 
+                ------>
+                <!-- <div class="item">
+                    <p class="name">Milk</p>
+                    <div class="btn-container">
+                        <button class="edit-btn">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="delete-btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div> -->
+            </article>
+            <!--clear button-->
+            <button type="button" class="clear-btn">clear item</button>
+        </div>
+    </section>
+
+    <!--javascript-->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
